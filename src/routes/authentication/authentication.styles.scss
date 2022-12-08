@@ -1,0 +1,13 @@
+@use "../../scss/breakpoints/breakpoints";
+
+.authentication-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    @include breakpoints.xl {
+        flex-direction: row;
+    }
+}

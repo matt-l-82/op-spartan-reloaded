@@ -1,0 +1,197 @@
+@use "../../scss/utils/utilities.scss" as utils;
+@use "../../scss/mixins/mixins.scss";
+@use "../../scss/breakpoints/breakpoints";
+
+
+.banner {
+    background: url('../../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    width: 100%;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+
+    .bannerCopy {
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .h1 {
+        @include mixins.h1-title;
+    }
+
+    p {
+        @include mixins.banner-tagline;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+//CORE SERVICES SECTION
+.coreServices {
+    padding: 6rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #23231B;
+
+    h3 {
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 56px;
+        /* identical to box height, or 311% */
+        
+        letter-spacing: -0.3px;
+        
+        color: #FFFFFF; 
+    }
+
+    p {
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+        /* or 88% */
+
+        letter-spacing: -0.3px;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .coreServicesBadge {
+        position: relative;
+        width: 260px;
+        height: 288px;
+        border: 1px solid #968E3D;
+        border-radius: 2px;
+        margin: 0 auto;
+
+        @include breakpoints.md {
+            width: auto;
+        }
+
+        @include breakpoints.lg {
+            width: 260px;
+        }
+        
+        img {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: auto;
+            height: 100px;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        .h3 {
+            @include mixins.badge-title;
+        }
+    }
+}
+
+.count {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #FFF;
+    background-color: #C90C0F;
+    z-index: 5;
+    top: -60px;
+    
+
+    &:before {
+        content: "";
+        background-image: url('../../assets/transparent-map.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: repeat;
+        height: 100%;
+        position: absolute;
+        top: 0;     
+        left: 0;   
+    }
+
+    .numbersTitle {
+        @include mixins.numbersTitle;
+    }
+
+    .numbersDesc {
+        @include mixins.numbersDesc;
+    }
+}
+
+.communityBgImage {
+    height: 100%;
+    background-image: url('../../assets/summary-intro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+p {
+    line-height: 32px;
+}
+
+.memberSupport {
+    position: relative;
+
+    .memberSupportBG {
+        background: #23231B;
+    }
+
+    img {
+
+        @include breakpoints.lg {
+            margin-top: -90px;
+            margin-left: -30px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 626px;
+            bottom: 5px;
+
+            /* Accent 1 */
+
+            background: #312F22;
+            z-index: 999;
+        }
+    }
+
+    h3 {
+        @include mixins.supportTitle;
+    }
+
+    p {
+        @include mixins.memeberSupportDesc;
+    }
+}
+
+//TESTIMONIALS
+.testimonials {
+    position: relative;
+
+   .testimonialsTitle {
+    @include mixins.supportTitle;
+    color: #111;
+    text-align: center;
+   }
+}

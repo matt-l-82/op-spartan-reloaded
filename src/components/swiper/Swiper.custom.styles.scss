@@ -1,0 +1,51 @@
+@use "../../scss/mixins/mixins.scss";
+
+.swiper {
+  width: 100%;
+  margin: auto 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: auto;
+  min-height:250px;
+  padding: 20px 20px;
+  text-align:center;
+  background:white;
+}
+
+// .swiper-slide img {
+//   display: block;
+//   margin: -25px auto 40px;
+//   width: 50px;
+//   height:50px;
+//   border-radius:50%;
+//   border:2px solid white;
+//   box-shadow:0 5px 10px rgb(0 0 0 / .2)
+// }
+
+.name{
+  font-size:18px;
+  font-weight:800;
+}
+
+.title{
+  opacity:.5;
+}
+
+.quote{
+  font-size:20px;
+  font-style:italic;
+  font-weight:400;
+  font-family: serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #C90C0F !important;
+}

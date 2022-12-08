@@ -1,0 +1,27 @@
+.core__services {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.3px;
+}
+    .core__services-title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.3px;
+    }
+.membership {
+    width: 260px;
+    height: 288px;
+    border: 1px solid #968E3D;
+    border-radius: 2px;
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+    }
+}
+
+

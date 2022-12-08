@@ -1,0 +1,51 @@
+@use "../../scss/utils/utilities.scss" as utils;
+@use "../../scss/mixins/mixins.scss";
+@use "../../scss/breakpoints/breakpoints";
+
+.footer {
+    background-color: #23231B;
+
+    ul.social-icons {
+        list-style: none;
+        display: flex;
+
+        @include breakpoints.md {
+            justify-content: flex-start !important;
+        }
+    }
+
+    h3 {
+        margin-top: 2rem;
+        @include mixins.numbersDesc;
+        text-align: left;
+        position: relative;
+        
+        &::after {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background-color: #968E3D;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    li {
+        color: white;
+        padding: .5rem 0;
+    }
+
+    .border {
+        border-bottom: 1px solid #968E3D;
+    }
+
+    .email, .address {
+        display: flex;
+    }
+}

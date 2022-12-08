@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* rest of app styles */
+
+:root {
+    --font-base: 'Rajdhani', sans-serif;
+
+    --primary-color: #C90C0F;
+    --secondary-color: #23231B;
+    --accent: #968E3D;
+
+    --text: #23231B;
+    --white: #FFF;
+
+}
+
+body {
+    background: #FFF;
+    font-family: var(--font-base);
+    font-size: 16px;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
